@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>skills</h1>
+
+<%= link_to "Create new skill", new_skill_path %>
+
+<% @skills.each do | skill | %>
+  <p><%= skill.title %></p>
+    <p><%= skill.percent_utilized %></p>
+
+
+
+
+
+
+<% end %>
